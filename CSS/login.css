@@ -1,0 +1,84 @@
+.signUpDiv {
+    background-image: url(../IMAGES/white\ pattern.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.788);
+    height: 40rem;
+    width: 60rem;
+    padding: 3% 0;
+    box-shadow: -.1rem .2rem .4rem .2rem rgba(185, 185, 185, 0.322);
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(214, 211, 211);
+    height: 41.6rem;
+
+}
+
+.form {
+    width: 100%;
+}
+
+.signIn {
+    width: 50%;
+}
+
+.signIn img {
+    height: 5rem;
+}
+
+.signUpDiv .register {
+    height: 40rem;
+    background: linear-gradient(to top, rgba(3, 86, 3, 0.727), rgba(255, 255, 255, 0.268)), url(../IMAGES/students.png) center, no-repeat;
+    background-size: cover;
+    width: 50%;
+    border-radius: 1rem 0 0 1rem;
+    padding-top: 23rem;
+}
+
+.form form p {
+    color: var(--green);
+    font-size: 1.05rem;
+}
+
+
+.form form p:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.form form .loginInput input[type="text"],
+[type="password"] {
+    border: 0;
+    outline: 0;
+    padding: .6rem 1rem;
+    border-radius: .5rem;
+    width: 18rem;
+    box-shadow: -.1rem .2rem .4rem .2rem rgb(216, 216, 216);
+}
+
+.form form button {
+    padding: .8rem 6rem;
+    border-radius: .3rem;
+    background: var(--gradient-color-left);
+    color: var(--cl-white);
+    font-size: 1.03rem;
+}
+
+.register h1 {
+    text-align: center;
+    color: var(--cl-white);
+    width: 20rem;
+}
+
+.register div button {
+    background: var(--gradient-color-left);
+    color: var(--cl-white);
+    font-size: 1rem;
+    padding: .7rem 4rem;
+    border-radius: .7rem;
+    box-shadow: -.1rem .2rem .4rem .2rem rgba(185, 185, 185, 0.636);
+}

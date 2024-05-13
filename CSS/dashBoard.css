@@ -1,0 +1,107 @@
+.dashBoard {
+    background-image: url(../IMAGES/white\ pattern.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(236, 236, 237, 0.562);
+    padding: .5rem 3rem;
+
+}
+
+.sideBar {
+    width: 15%;
+    background: var(--gradient-color-bottom);
+    padding: 2rem 0;
+    height: 45.6rem;
+    border-radius: 1rem 1rem 0 0;
+    color: var(--cl-white);
+    position: sticky;
+    top: 0;
+}
+
+.sideBar img {
+    height: 3rem;
+    object-fit: contain;
+}
+
+.sideBarLists img {
+    height: 2.5rem;
+}
+
+.sideBarLists span {
+    font-weight: bold;
+}
+
+.academicsRegion {
+    width: 85%;
+}
+
+.courses {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: -.1rem .2rem .4rem .2rem rgba(185, 185, 185, 0.322);
+}
+
+.welcomeMessage {
+    margin-bottom: 2rem;
+}
+
+.levels button {
+    background-color: green;
+    border: 0;
+    padding: .4rem 1.6rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.enrollment {
+    background-color: rgba(236, 236, 237, 0.373);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.enrollment button {
+    background: #C79F00;
+    border: 0;
+    border-radius: 5px;
+    padding: .8rem 2.3rem;
+    color: white;
+}
+
+.subjects {
+    width: 223.36px;
+    height: 384.26px;
+    box-shadow: 2px 5px 5px grey;
+    border-radius: .9rem;
+}
+
+.subjects button {
+    background: #C79F00;
+    border: 0;
+    border-radius: 5px;
+    padding: .6rem 2.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.subjects p {
+    margin-bottom: 1rem;
+}
+
+.subjects span {
+    font-size: 12px;
+}
+
+.subjects img {
+    height: 199.01px;
+    width: 223.36px;
+    border-radius: 1rem;
+}
+
+.credits {
+    padding-left: 1rem;
+}
+
+.coursesRegion {
+    padding: 2rem;
+}

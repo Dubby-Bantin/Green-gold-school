@@ -1,0 +1,175 @@
+
+.landingBackground {
+    background: url('../IMAGES/white pattern.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40.99rem;
+    background-color: rgb(214, 211, 211);
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 999;
+    overflow: hidden;
+}
+
+
+.landingBackground .socialMediaicons {
+    height: 10rem;
+    width: 3.5rem;
+    background: var(--gradient-color-bottom);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2rem 0rem 0rem 2rem;
+    top: -9rem;
+    left: 7.7rem;
+    animation: slideOut 1.5s linear .2s both;
+}
+
+.landingBackground .description div button {
+    background-color: var(--green);
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 0;
+}
+
+.landingBackground .description {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 2rem;
+    padding: 5rem;
+    top: -12rem;
+    position: relative;
+    animation: slideIn 1.5s linear .2s both;
+
+}
+
+.studentBg {
+    background-color: rgb(200, 219, 206);
+    padding: 25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -16rem;
+    position: relative;
+    top: -3rem;
+}
+
+
+.mottos {
+    position: relative;
+    height: 12rem;
+    width: 25rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+    top: -25rem;
+    color: white;
+}
+
+.mottos:hover{
+    opacity: .91;
+}
+
+.mottos:nth-child(1) {
+    background-color: rgba(0, 128, 0, 0.751);
+}
+
+.mottos:nth-child(2) {
+    background-color: rgba(199, 159, 0, 0.745);
+}
+
+.mottos:nth-child(3) {
+    background-color: rgba(232, 227, 227, 0.74);
+}
+
+
+.mottosParent{
+    cursor: pointer;
+    animation: fade 1.5s linear .2s both;
+}
+
+@keyframes fade {
+    from {opacity: 0; top: 5rem;}
+    to{opacity: 1; top: -5rem;}
+}
+
+
+@keyframes slideIn {
+    from {opacity: 0; left: -10rem;}
+    to{opacity: 1; left: 1rem;}
+}
+
+
+@keyframes slideOut {
+    from {opacity: 0; left: 10rem;}
+    to{opacity: 1; left: 8.5rem;}
+}
+
+
+@keyframes headerSlideIn {
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    .studentBg{
+        display: none;
+    }
+
+
+    
+
+
+    .mottosParent{
+        flex-direction: column;
+        margin-top: 10rem;
+        animation: 0;
+        margin-left: -25rem;
+        gap: .5rem;
+    }
+
+    .mottosParent .mottos{
+        width: 20rem;
+        font-size: .7rem;
+        z-index: 1000;
+    }
+
+    .landingBackground{
+        padding: 13rem 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        height: 37.6rem;
+    }
+
+    .landingBackground .description{
+        width: 130%;
+    }
+
+}

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sora, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    padding: .5rem;
+    background-color: white;
+    z-index: 999;
+    box-shadow: .01rem .1rem .2rem rgb(241, 241, 241);
+    color: var(--green);
+    animation: headerSlideIn 1.5s linear .2s both;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.logo img:nth-child(2) {
+    display: none;
+}
+
+.navBar .navList ul {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+}
+
+
+.navBar .profile {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navBar .profile .profileRegion div {
+    background-color: white;
+    padding: .4rem .6rem;
+    border-radius: 3rem;
+    margin-right: 1rem;
+}
+
+.navBar .profile .profileRegion div img {
+    height: 1rem;
+}
+
+.navBar .profile {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+
+.navBar .profile .profileRegion {
+    justify-content: space-around;
+    display: flex;
+    padding: .3rem .6rem;
+    align-items: center;
+    gap: .3rem;
+    background: var(--gradient-color-left);
+    border-radius: 50px;
+    font-size: .8rem;
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.a-white {
+    color: var(--cl-white);
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --gradient-color-bottom: linear-gradient(to bottom, #025b1d, #947b00);
+    --gradient-color-left: linear-gradient(to right, #025b1d, #947b00);
+    --gradient-color-deg: linear-gradient(45deg, #025b1d, #947b00);
+    --green: #097629;
+    --gold: #947b00;
+    --red: rgb(232, 27, 27);
+    --bg-white: #fff;
+    --cl-white: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-flex {
+    align-items: center;
+}
+
+.justify-btw {
+    justify-content: space-between;
+}
+
+.justify-ard {
+    justify-content: space-around;
+}
+
+.justify-ctr {
+    justify-content: center;
+}
+
+.align-top {
+    align-items: flex-start;
+}
+
+.flex-end {
+    align-self: flex-end;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.border-0 {
+    border: 0;
+}
+
+.--gap {
+    gap: .6rem;
+}
+
+.--gap1 {
+    gap: 1rem;
+}
+
+.--gap2 {
+    gap: 2rem;
+}
+
+.--gap3 {
+    gap: 3rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+
+
+.pointer:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.profile .profileIcon{
+    background:white;
+    box-shadow: .01rem .1rem .2rem rgb(195, 194, 194);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .navBar {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .navBar .navList ul {
+        position: absolute;
+        color: #fff;
+        background: var(--gradient-color-deg);
+        height: 14rem;
+        margin-top: 2.5rem;
+        width: 50%;
+        right: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navBar .navList ul.toggled {
+        animation: toggle 1s linear .5s both;
+    }
+
+
+    @keyframes toggle {
+        from {
+            opacity: 0;
+            right: -100%;
+        }
+
+        to {
+            opacity: 1;
+            right: 0;
+        }
+    }
+
+    .profile .profileRegion div,
+    .profile .profileRegion div img,
+    .profile span,
+    .profileRegion span {
+        display: none;
+    }
+
+
+    .logo img:nth-child(2) {
+        display: block;
+    }
+}

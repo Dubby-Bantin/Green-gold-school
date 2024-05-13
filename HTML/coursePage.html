@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/coursePage.css">
+    <link rel="stylesheet" href="../CSS/shared.css">
+    <link rel="stylesheet" href="../CSS/dycalendar.css">
+</head>
+
+<body>
+    <div class="navBar" style="width: 100%;">
+        <div class="logo">
+            <img style="height: 3rem;" src="../IMAGES/mainLogo.png" alt="">
+            <img src="../IMAGES/menu icon.svg" alt="">
+        </div>
+        <div class="navList">
+            <ul class="navLink"></ul>
+        </div>
+
+        <div class="profile">
+            <a href="signIn.html"><span>Sign up</span></a>
+            <div class="profileRegion">
+                <div>
+                    <img src="../IMAGES/user icon.svg" alt="">
+                </div>
+                <span>My Profile</span>
+            </div>
+        </div>
+    </div>
+    <div class="dashBoard flex ">
+        <div class="sideBar flex flex-column "></div>
+        <!-- main -->
+
+        <!-- --------------------------------- -->
+        <div style="width: 92%;" class="flex courseRegion flex-column p-2">
+            <div class="welcomeMessage align-flex flex-end flex --gap1">
+                <div class="date"></div>
+                <span style="border-right: 1px solid black; height: 3rem;"></span>
+                <div class="profile align-flex flex --gap1">
+                    <span class="profileIcon align-flex justify-ctr flex ">
+                        <img src="../IMAGES/user icon.svg" alt="">
+                    </span>
+                    <span class="profileName">Hello Bantin</span>
+                </div>
+            </div>
+            <div class="courseDescription flex-column flex --gap1">
+                <h3 class="p-1">Elementry Mathematics</h3>
+                <div class="course flex flex-column">
+                    <div class="coursePicture flex align-flex p-2">
+                        <img src="../IMAGES/maths.png" alt="">
+                        <div class="mainDescription flex flex-column ">
+                            <h3>Course Description</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati
+                                voluptates deleniti omnis eos est molestiae vitae, eligendi nobis itaque dolorum eius
+                                accusamus dolores qui impedit quidem quasi sequi pariatur!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nisi rerum dolorum
+                                possimus autem non porro vel eos beatae quibusdam!
+                            </p>
+                            <div>
+                                <h3>Course factors: </h3>
+                                <p>Mr Jude, Mrs mater............</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attendance flex align-flex justify-btw">
+                        <div class="flex  flex-column">
+                            <h3 style="margin-bottom: .5rem;">Semester 1 Attendance rating</h3>
+                            <div class="flex align-flex --gap1 attendance-rating">
+                                <div class="flex  flex-column">
+                                    <div class="bar"></div>
+                                    <p>Completed Classes</p>
+                                </div>
+
+                                <div class="flex  flex-column">
+                                    <div class="bar"></div>
+                                    <p>Completed Classes</p>
+                                </div>
+                                <div class="flex flex-column">
+                                    <div class="bar"></div>
+                                    <p>Completed Classes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-column --gap1">
+                            <div class="date"></div>
+                            <div class="flex --gap1">
+                                <p>Check In</p>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+
+                        <div class="classTime flex flex-column">
+                            Begins : 9:am
+                            <button class="border-0">Enter Class</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="activityDescription flex align-flex justify-ard align-top">
+                <div class="hoursActivity ">
+                    <canvas id="barChart" height="300" width="300"></canvas>
+                </div>
+                <div class="SemesterSchedule">
+                </div>
+                <div class="calendar" id="calender"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="../JS/coursePage.js"></script>
+    <script src="../JS/dycalendar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="../JS/chart.js"></script>
+    <script type="module" src="../JS/shared.js"></script>
+</body>
+</html>

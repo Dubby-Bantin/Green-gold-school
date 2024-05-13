@@ -1,0 +1,62 @@
+.signInBg {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 41.6rem;
+    background: url(../IMAGES/white\ pattern.png) center, no-repeat;
+    background-color: rgba(146, 143, 143, 0.321);
+}
+
+
+.library {
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--cl-white);
+    height: 100%;
+    width: 50%;
+    /* padding: 30rem 0; */
+    background: linear-gradient(to top, #947b00, rgba(255, 255, 255, 0.112)), url(../IMAGES/girl\ in\ lib.png) center, no-repeat;
+    background-size: cover;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.library h1 {
+    text-align: center;
+    width: 21.9rem;
+    margin-top: 15rem;
+}
+
+.sign-up-region {
+    height: 41.6rem;
+    width: 50%;
+}
+
+.sign-up-region input[type="text"],
+[type="password"],
+[type="email"] {
+    border: 0;
+    outline: 0;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    width: 18rem;
+    box-shadow: -.1rem .2rem .4rem .2rem rgb(216, 216, 216);
+}
+
+.grey {
+    background-color: grey;
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+}
+
+button {
+    padding: .6rem 5rem;
+    background-color: rgb(205, 9, 9);
+    border: 0;
+    border-radius: .3rem;
+    color: var(--cl-white);
+    margin-left: -.8rem;
+}
+
+small {
+    font-size: .7rem;
+}

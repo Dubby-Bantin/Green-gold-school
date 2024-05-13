@@ -1,0 +1,139 @@
+.dashBoard {
+    background-image: url(../IMAGES/white\ pattern.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(214, 211, 211);
+}
+
+.sideBar {
+    width: 8%;
+    background: var(--gradient-color-bottom);
+    padding: 2rem 0;
+    height: 45.6rem;
+    border-radius: 0 1rem 0 0;
+    color: var(--cl-white);
+    position: sticky;
+    top: 0rem;
+}
+
+.sideBar .activities {
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.sideBar .activities img {
+    height: 40%;
+}
+
+
+
+
+.course {
+    border-radius: 1rem 1rem 0 0;
+    gap: 3rem;
+    box-shadow: -.1rem .2rem .4rem .2rem rgb(241, 241, 241);
+    background: var(--bg-white);
+}
+
+.coursePicture {
+    gap: 5rem;
+}
+
+.coursePicture .mainDescription {
+    gap: 2rem;
+    width: 50%;
+}
+
+.coursePicture img {
+    width: 25rem;
+    border-radius: 1rem;
+}
+
+.attendance {
+    border-top: 1px solid grey;
+    border-radius: 1rem 1rem 0 0;
+    padding: 1.5rem 3rem;
+}
+
+.classTime button {
+    font-size: 1rem;
+    border-radius: .7rem;
+    padding: .8rem 2rem;
+    background: var(--red);
+    color: var(--cl-white);
+}
+
+.bar {
+    height: .5rem;
+    width: 8rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    background: var(--green);
+}
+
+.calendar {
+    box-shadow:  -.1rem .1rem .4rem .1rem rgb(241, 241, 241);
+    border-radius: .3rem;
+    height: 15rem;
+    width: 20rem;
+    background: var(--bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activityDescription {
+    padding: 4rem 0;
+}
+
+.hoursActivity , .SemesterSchedule {
+    box-shadow:  -.1rem .1rem .4rem .1rem rgb(241, 241, 241);
+    background: var(--bg-white);
+    height: 20rem;
+    width: 20rem;
+    border-radius: .4rem .4rem 0 0;
+}
+
+
+@media (max-width: 600px){
+    .sideBar   {
+        display: flex;
+            flex-direction: row;
+            height: 4.6rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+    .sideBar .activities {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .dashBoard {
+        flex-direction: column;
+    }
+
+    .sideBarLinks {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .course,
+    .mainDescription,
+    .activityDescription,
+    .coursePicture,
+    .attendance,
+    .attendance-rating {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sideBar {
+        flex-direction: row;
+    }
+}

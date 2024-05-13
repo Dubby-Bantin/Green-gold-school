@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/shared.css">
+</head>
+<body>
+    <div class="navBar" style="width: 100%;">
+        <div class="logo">
+            <img style="height: 3rem;" src="../IMAGES/mainLogo.png" alt="">
+            <img src="../IMAGES/menu icon.svg" alt="">
+        </div>
+        <div class="navList">
+            <ul class="navLink"></ul>
+        </div>
+
+        <div class="profile">
+            <a href="signIn.html"><span>Sign up</span></a>
+            <div class="profileRegion">
+                <div>
+                    <img src="../IMAGES/user icon.svg" alt="">
+                </div>
+                <span>My Profile</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="signUpDiv flex align-flex ">
+            <div class="signIn flex flex-column align-flex">
+                <img src="../IMAGES/mainLogo.png" alt="">
+                <div class="form flex flex-column">
+                    <form class="flex flex-column align-flex --gap3">
+                        <div class="flex align-flex flex-column --gap3 ">
+                            <div class="flex align-flex flex-column --gap1 loginInput">
+                                <p>Sign into your account </p>
+                                <input type="text">
+                                <input type="password">
+
+                                <div class="password flex align-flex --gap3">
+                                    <div class="flex align-flex --gap">
+                                        <input type="radio">
+                                        <span>Remember me</span>
+                                    </div>
+                                <p>Forgot Password? </p>
+                            </div>
+                            </div>
+                        </div>
+                    <div class="flex flex-column align-flex --gap1">
+                        <button class="border-0" type="submit">Login</button>
+                        <div class="flex align-flex flex-column">
+                            <a href="signIn.html" class="flex flex-column align-flex" >
+                                <p style="color: var(--gold);">Don't have an account ?</p>
+                                <p>Register an account</p>
+                            </a>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="register flex flex-column align-flex">
+                <div class="flex flex-column align-flex --gap2">
+                    <h1>City of Knowledge and Ever Flourishing Wisdom</h1>
+                    <button class="border-0">Register an account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../JS/shared.js"></script>
+    <script src="../JS/login.js"></script>
+</body>
+</html>
+
